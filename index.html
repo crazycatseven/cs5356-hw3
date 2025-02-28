@@ -5,10 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <h1>Welcome to My Website</h1>
+    <header class="header">
+        <section class="profile">
+            <div class="profile__picture-container">
+                <div class="profile__gradient">
+                    <img src="images/profile.jpg" alt="Profile Picture" class="profile__picture">
+                </div>
+            </div>
+
+            <div class="profile__intro">
+                <h1 class="profile__greeting">Hi, I'm <span class="profile__name">Qingxuan</span></h1>
+                <p class="profile__bio">
+                    I build Augmented and Virtual Reality experiences.
+                </p>
+            </div>
+
+            <nav class="profile__social-links">
+                <a href="#" class="social-link">
+                    <i class="far fa-file"></i> Resume
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-artstation"></i> Artstation
+                </a>
+            </nav>
+        </section>
+    </header>
 </body>
 
 </html>

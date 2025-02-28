@@ -1,0 +1,96 @@
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+}
+
+/* Profile Section */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+}
+
+/* Profile Picture */
+
+.profile__picture-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.profile__picture {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile__gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #3a47ff, #ffc59f, #fffc2e);
+    padding: 3px;
+}
+
+
+/* Profile Intro */
+
+.profile__intro {
+    text-align: center;
+}
+
+.profile__greeting {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.profile__name {
+    color: #ff933a;
+}
+
+.profile__bio {
+    font-size: 1.25rem;
+}
+
+/* Profile Social Links */
+
+.profile__social-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 1.1rem;
+}
+
+.social-link:hover {
+    color: #008cff;
+    translate: 0 -2px;
+}
+
+.social-link i {
+    font-size: 1.2rem;
+}
