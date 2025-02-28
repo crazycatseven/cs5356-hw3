@@ -164,4 +164,57 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initialize
     fetchDogImages();
-}); 
+
+    // Project Dialog Functionality
+    setupProjectDialogs();
+});
+
+
+function setupProjectDialogs() {
+    // Get all project cards
+    const projectCards = document.querySelectorAll('.project-card');
+
+    // Add click event to each project card
+    projectCards.forEach(card => {
+        card.addEventListener('click', function () {
+            const projectId = this.getAttribute('data-project-id');
+            const dialog = document.getElementById(`project-dialog-${projectId}`);
+
+            if (dialog) {
+                dialog.showModal();
+            }
+        });
+    });
+
+    // Add close button to all dialogs
+    const closeButtons = document.querySelectorAll('.dialog-close-btn');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const dialog = this.closest('dialog');
+            if (dialog) {
+                dialog.close();
+            }
+        });
+    });
+
+    // Close dialog when clicking on backdrop
+    const dialogs = document.querySelectorAll('.project-dialog');
+    dialogs.forEach(dialog => {
+        dialog.addEventListener('click', function (event) {
+            // Check if the click was on the dialog backdrop (not on dialog content)
+            if (event.target === dialog) {
+                dialog.close();
+            }
+        });
+    });
+
+    // Also add keyboard support (Escape key to close)
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            const openDialog = document.querySelector('dialog[open]');
+            if (openDialog) {
+                openDialog.close();
+            }
+        }
+    });
+} 

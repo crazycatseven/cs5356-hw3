@@ -19,6 +19,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Qingxuan's Portfolio">
 
+    <!-- Works for Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Qingxuan's Portfolio">
     <meta name="twitter:description" content="I build Augmented and Virtual Reality experiences.">
@@ -77,7 +78,7 @@
         <section class="projects">
             <h2 class="section-title">Selected Projects</h2>
             <!-- Project 1 -->
-            <div class="project-card">
+            <div class="project-card" data-project-id="1">
                 <div class="project-image-container">
                     <img src="images/project1.jpg" alt="Cross-Device Augmented Reality Interactions"
                         class="project-image">
@@ -93,7 +94,7 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="project-card">
+            <div class="project-card" data-project-id="2">
                 <div class="project-image-container">
                     <img src="images/project2.png" alt="Tangible Objects in AR Tower Defense Gaming Interaction"
                         class="project-image">
@@ -111,7 +112,7 @@
             </div>
 
             <!-- Project 3 -->
-            <div class="project-card">
+            <div class="project-card" data-project-id="3">
                 <div class="project-image-container">
                     <img src="images/project3.png" alt="AR Navigation" class="project-image">
                 </div>
@@ -126,7 +127,89 @@
         </section>
     </main>
 
+    <!-- Project Details Dialogs -->
+    <dialog id="project-dialog-1" class="project-dialog">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <h2>Cross-Device Augmented Reality Interactions for Mobile Phones and Head-Mounted Displays</h2>
+                <button class="dialog-close-btn">&times;</button>
+            </div>
+            <div class="dialog-body">
+                <img src="images/project1.jpg" alt="Cross-Device Augmented Reality Interactions" class="dialog-image">
+                <div class="dialog-description">
+                    <p>This project presents a framework that transforms a mobile phone into an intuitive input
+                        interface for Mixed Reality. By transmitting real-time sensor data, touch inputs, and the
+                        device's 6-DoF pose to an MR headset, the system allows users to interact with virtual content
+                        more naturally.</p>
+                    <p>Key Features:</p>
+                    <ul>
+                        <li>Transforms mobile phones into intuitive input interfaces for Mixed Reality</li>
+                        <li>Transmits real-time sensor data, touch inputs, and 6-DoF pose to MR headsets</li>
+                        <li>Enables scenarios like pinching virtual objects from the phone's screen into the MR
+                            environment</li>
+                        <li>Provides a versatile controller-free experience compared to traditional MR controllers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="project-dialog-2" class="project-dialog">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <h2>Exploring the Role of Tangible Objects in AR Tower Defense Gaming Interaction</h2>
+                <button class="dialog-close-btn">&times;</button>
+            </div>
+            <div class="dialog-body">
+                <img src="images/project2.png" alt="Tangible Objects in AR Tower Defense Gaming Interaction"
+                    class="dialog-image">
+                <div class="dialog-description">
+                    <p>This project explores the impact of tangible objects on user experience in Augmented Reality
+                        gaming, specifically within an self-designed AR tower defense game. While AR technology blends
+                        digital and physical worlds, most interactions rely on either freehand gestures or
+                        hardware-based inputs, each with its limitations.</p>
+                    <p>Research Focus:</p>
+                    <ul>
+                        <li>Exploring the impact of tangible objects on user experience in AR gaming</li>
+                        <li>Designing a custom AR tower defense game as a research platform</li>
+                        <li>Analyzing limitations of existing AR interaction methods (gestures and hardware inputs)</li>
+                        <li>Proposing tangible interaction as a promising alternative to enhance immersion and provide
+                            more intuitive user experiences</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="project-dialog-3" class="project-dialog">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <h2>Medieval Blade - An Action-Strategy Game</h2>
+                <button class="dialog-close-btn">&times;</button>
+            </div>
+            <div class="dialog-body">
+                <img src="images/project3.png" alt="Medieval Blade" class="dialog-image">
+                <div class="dialog-description">
+                    <p>Medieval Blade is a group project developed as part of the ANU Game Development Course. Set in a
+                        medieval village, the game immerses players in a narrative where the village's various regions
+                        have been overrun by different types of monsters.</p>
+                    <p>Game Features:</p>
+                    <ul>
+                        <li>Players take on the role of heroes with different skills, tasked with battling monsters and
+                            reclaiming the village</li>
+                        <li>Medieval village setting with different regions overrun by various types of monsters</li>
+                        <li>Collaborative project developed as part of the ANU Game Development Course</li>
+                        <li>Gameplay combining action and strategy elements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
     <script src="script.js"></script>
+
+    <!-- GoatCounter Analytics -->
+    <script data-goatcounter="https://crazycatseven.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 
 </html>
